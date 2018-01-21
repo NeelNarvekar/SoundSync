@@ -12,6 +12,8 @@ Neel Narvekar, Georgia Institute of Technology
 <head>
 	<title> Sound[Sync] </title>
 	<link href="CSS/stylesheet.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"></script>
 	<script src="JavaScript/granim.min.js" type="text/javascript"></script>
 	<script src="JavaScript/annyang.min.js" type="text/javascript"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/wavesurfer.min.js"></script>
@@ -20,8 +22,37 @@ Neel Narvekar, Georgia Institute of Technology
 
 <body>
 	<canvas id="granim-canvas"></canvas>
-	<h1> --Sound[Sync]-- </h1>
 	
+	<div id="overlay" onclick="off()">
+		
+		<div id="overlayTextHeading1">Welcome to Sound[Sync]</div>
+		
+		<div id="overlayText1">
+			 Please allow microphone access in your browser if and when prompted. <br><br>
+			 
+			 Start by saying "Play" to start playing music across all your devices. Below is a list of all the voice commands you can use to navigate through Sound[Sync]. <br><br>
+			 
+			 We recommend that you bring your devices as close as possible for the initial "Play" command. <br><br><br>
+		</div>
+		
+		<div id="overlayTextHeading2">Voice Commands</div>
+		
+		<div id="overlayText2">
+			"Play" - Starts playing the current song <br>
+			"Pause" - Pauses the current song <br>
+			"Next" - Skips to the next track <br>
+			"Previous" - Plays the previous track <br><br><br>
+			Click anywhere to continue. 
+		</div>
+		
+		</div>
+	</div>
+	
+	<i class="fa fa-info-circle" onclick="on()" 
+	style="font-size:48px; color:white; cursor:pointer; float:right; top:20px;"></i>
+	
+	<h1> --Sound[Sync]-- </h1>
+		
 	<script>
     var granimInstance = new Granim({
         element: '#granim-canvas',
@@ -38,7 +69,17 @@ Neel Narvekar, Georgia Institute of Technology
         }
     });
 	</script>
+	
+	<script>
+	function on() {
+    	document.getElementById("overlay").style.display = "block";
+	}
 
+	function off() {
+    	document.getElementById("overlay").style.display = "none";
+	}
+	</script>
+		
 	<div class="row">
 		<div class="large-12 medium-12 small-12 columns">
 			<div id="waveform"></div>
@@ -103,6 +144,9 @@ Neel Narvekar, Georgia Institute of Technology
         annyang.start();
     }
 	</script>
+	
 	<div id="waveform"></div>
+	
+	<div id="footerText"> Built with &lt;/&gt; at SwampHacks 2018</div>
 </body>
 </html>
