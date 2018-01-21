@@ -56,11 +56,13 @@ Neel Narvekar, Georgia Institute of Technology
 
 	var songNames = [];
     var songList = ["Young Volcanoes.webm", "The Last of the Real Ones.webm", "Wilson (Expensive Mistakes).webm"];
-    for(i = 0; i < songList.length; i++){
+    
+	for(i = 0; i < songList.length; i++){
         var ind = songList[i].indexOf(".");
         songNames[i] = songList[i].substring(0,ind); 
     }
-    document.getElementById("SongTitle").innerHTML = songNames[0];
+    
+	document.getElementById("SongTitle").innerHTML = songNames[0];
     var songIndex = 0;
     
 	wavesurfer.on('ready', function () {
