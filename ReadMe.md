@@ -1,11 +1,10 @@
- ## What is Sound[Sync]?
+<img align="right" width="624" height="351" src="https://i.imgur.com/J16GZ1i.jpg">
+
+## What is Sound[Sync]?
 
 **Sound[Sync]** is a web application that allows you to play songs simultaneously on multiple devices without having to pair them with each other. 
 
 It is written purely in **HTML**, **CSS**, and **JavaScript** and uses voice commands to play, pause, and skip between tracks. Users can start blasting music simultaneously on any device that supports JavaScript by bringing all the devices close to each other and then simply saying the word "play".
-
-<img align="right" width="624" height="351" src="https://i.imgur.com/J16GZ1i.jpg">
-
 
 ## Why did we build it in the first place?
 
