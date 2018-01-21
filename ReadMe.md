@@ -1,4 +1,4 @@
-<img align="center" width="624" height="351" src="https://i.imgur.com/J16GZ1i.jpg">
+<p align="center"><img align="center" width="624" height="351" src="https://i.imgur.com/J16GZ1i.jpg"></p>
 
 ## What is Sound[Sync]?
 
