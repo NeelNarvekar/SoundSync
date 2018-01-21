@@ -45,6 +45,7 @@ Neel Narvekar, Georgia Institute of Technology
 			<div id="waveform-timeline"></div>
 		</div>
 	</div>
+	<div id ="SongTitle"></div>
 
 	<script>
     var wavesurfer = WaveSurfer.create({
@@ -53,7 +54,13 @@ Neel Narvekar, Georgia Institute of Technology
         waveColor: '#2c3e50'
     });
 
+	var songNames = [];
     var songList = ["Young Volcanoes.webm", "The Last of the Real Ones.webm", "Wilson (Expensive Mistakes).webm"];
+    for(i = 0; i < songList.length; i++){
+        var ind = songList[i].indexOf(".");
+        songNames[i] = songList[i].substring(0,ind); 
+    }
+    document.getElementById("SongTitle").innerHTML = songNames[0];
     var songIndex = 0;
     
 	wavesurfer.on('ready', function () {
@@ -80,12 +87,14 @@ Neel Narvekar, Georgia Institute of Technology
             'next': function () {
                 songIndex=(songIndex + 1) % 3;
                 wavesurfer.load("Media/" + songList[songIndex]);
+				document.getElementById("SongTitle").innerHTML = songNames[songIndex];
             },
 
             'previous': function () {
                 if(songIndex == 0) {songIndex = 3;}
                 songIndex=(songIndex - 1);
                 wavesurfer.load("Media/" + songList[songIndex]);
+				document.getElementById("SongTitle").innerHTML = songNames[songIndex];
             }
         };
         annyang.addCommands(commands);
