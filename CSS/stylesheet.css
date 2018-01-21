@@ -3,6 +3,11 @@
     src: url('../Fonts/Leixo.ttf') format("truetype");
 }
 
+@font-face {
+    font-family: Neou;
+    src: url('../Fonts/Neou.ttf') format("truetype");
+}
+
 h1 {
     color: white;
     font-weight: 200;
@@ -16,7 +21,9 @@ h1 {
 
 #SongTitle {
     color: white;
-    font-family: Roboto;
+    font-family: Neou;
+    font-size: 40px;
+    padding: 170px 0px 0px 0px;
     text-align: center;
 }
 
