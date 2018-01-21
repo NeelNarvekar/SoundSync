@@ -29,7 +29,9 @@ We're really proud of the fact that we were able to run this natively just on a 
 We were also really excited to be able to synchronize audio from a web browser on Windows, MacOS, and Android simultaneously. It was really cool to see up to 9 devices playing the same song in different parts of the room at once while we were testing it.
 
 ## What we learned
+
 Due to the technologies we explored before settling on our final solution, we were exposed to a far greater amount of information than seen in just the final project alone. We learned about the difficulties involving pairing time and the libraries used to tackle this problem (like socket.io). In addition to this, we are now familiar with several audio libraries in JavaScript. This of course is in addition to the APIs and languages used in the project.
 
 ## What's next for Sound[Sync]?
+
 Further applications of Sound[Sync] would include a collaborative playlist that each user would be able to contribute to. In addition to this, we would look into other technologies to further reduce the latency involved with playing audio from numerous devices. We are also planning to integrate the YouTube API to synchronize music videos over multiple devices.
