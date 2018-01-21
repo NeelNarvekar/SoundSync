@@ -4,6 +4,9 @@
 
 It is written purely in **HTML**, **CSS**, and **JavaScript** and uses voice commands to play, pause, and skip between tracks. Users can start blasting music simultaneously on any device that supports JavaScript by bringing all the devices close to each other and then simply saying the word "play".
 
+<img align="right" width="624" height="351" src="https://i.imgur.com/J16GZ1i.jpg">
+
+
 ## Why did we build it in the first place?
 
 As college students, we understand that Bluetooth speakers can be expensive and that people don't always have them on hand for every occasion. We also know how frustrating it is to not be able to use speakers from all the devices that you usually have with you around campus. (laptops, phones, etc.)
