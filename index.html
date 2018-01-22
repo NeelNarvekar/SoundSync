@@ -41,7 +41,7 @@ Neel Narvekar, Georgia Institute of Technology
 			"Pause" - Pauses the current song <br>
 			"Next" - Skips to the next track <br>
 			"Previous" - Plays the previous track <br><br><br>
-			Click anywhere to continue. 
+			Click anywhere to continue
 		</div>
 		
 		</div>
@@ -50,7 +50,7 @@ Neel Narvekar, Georgia Institute of Technology
 	<i class="fa fa-info-circle" onclick="on()" 
 	style="font-size:48px; color:white; cursor:pointer; float:right; top:20px;"></i>
 	
-	<h1> --Sound[Sync]-- </h1>
+	<h1> Sound[Sync] </h1>
 		
 	<script>
     var granimInstance = new Granim({
@@ -91,7 +91,8 @@ Neel Narvekar, Georgia Institute of Technology
     var wavesurfer = WaveSurfer.create({
         container: '#waveform',
         barWidth: 5,
-        waveColor: '#2c3e50'
+        waveColor: '#2c3e50',
+		hideScrollBar: true
     });
 
 	var songNames = [];
@@ -144,8 +145,8 @@ Neel Narvekar, Georgia Institute of Technology
     }
 	</script>
 	
-	<div id="waveform"></div>
+	<div id="waveform" style="max-width:100%"></div>
 	
-	<div id="footerText"> Built with &lt;/&gt; at SwampHacks 2018</div>
+	<div id="footerText"> Built using &lt;/HTML5&gt; at SwampHacks 2018</div>
 </body>
 </html>
